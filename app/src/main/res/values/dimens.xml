@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">@dimen/_6sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_1sdp</dimen>
+    <dimen name="edit_text_height">@dimen/_20sdp</dimen>
+    <dimen name="edit_text_wdith">@dimen/_60sdp</dimen>
+    <dimen name="hangout_width">@dimen/_100sdp</dimen>
+    <dimen name="question_text_size">@dimen/_8sdp</dimen>
+</resources>

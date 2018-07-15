@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        app:layout_scrollFlags="scroll"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_edit_name"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/_1sdp"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/edit_personal_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    style="@style/MyEditTextstyle"
+                    android:padding="@dimen/_3sdp"
+                    android:imeActionLabel="Done"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColorHint="@color/white"
+                    android:hint="Name"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_1sdp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/_1sdp"
+                android:layout_below="@+id/relative_edit_name"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_personal_info_name_date"
+                    android:layout_width="match_parent"
+                    style="@style/MyEditTextstyle"
+                    android:textColorHint="@color/white"
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/white"
+                    android:hint="Date of Birth"
+                    android:layout_height="@dimen/edit_text_height" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/edit_date"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_personal_info_mailing_address"
+                    android:hint="Mailing Address"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_3sdp"
+                    style="@style/MyEditTextstyle"
+                    android:textColorHint="@color/white"
+                    android:layout_height="@dimen/edit_text_height" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/edit_mailing_address"
+                android:id="@+id/relative_address"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="@dimen/_160sdp"
+                    android:id="@+id/edit_personal_info_area"
+                    android:textColor="@color/white"
+                    style="@style/MyEditTextstyle"
+                    android:textSize="@dimen/_6sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:textColorHint="@color/white"
+                    android:hint="Area"
+                    android:layout_height="@dimen/edit_text_height" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/edit_personal_info_area"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edit_personal_info_city"
+                        android:layout_width="match_parent"
+                        android:hint="City"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_6sdp"
+                        android:padding="@dimen/_3sdp"
+                        style="@style/MyEditTextstyle"
+                        android:textColorHint="@color/white"
+                        android:layout_height="@dimen/edit_text_height" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_mobile_gender"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/relative_address"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="500dp"
+                    android:id="@+id/edit_personal_info_mobile_number"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_6sdp"
+                    style="@style/MyEditTextstyle"
+                    android:textColorHint="@color/white"
+                    android:layout_height="@dimen/edit_text_height" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/edit_personal_info_mobile_number"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:layout_height="match_parent">
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/edit_personal_info_spinner_gender"
+                        android:layout_width="match_parent"
+                        app:ms_background_color="@color/white"
+                        app:ms_arrow_tint="@color/white"
+                        app:ms_text_color="@color/black"
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_email_smoking_brand"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/relative_mobile_gender"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="500dp"
+                    android:id="@+id/edit_personal_info_email_address"
+                    android:hint="Email Address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_6sdp"
+                    android:padding="@dimen/_3sdp"
+                    style="@style/MyEditTextstyle"
+                    android:textColorHint="@color/white"
+                    android:layout_height="@dimen/edit_text_height" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/edit_personal_info_email_address"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:layout_height="match_parent">
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/edit_personal_info_spinner_smoking_brand"
+                        android:layout_width="match_parent"
+                        app:ms_background_color="@color/white"
+                        app:ms_arrow_tint="@color/white"
+                        app:ms_text_color="@color/black"
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="500dp"
+                        android:id="@+id/edit_personal_info_others_band"
+                        android:hint="Brand Name"
+                        android:layout_below="@+id/edit_personal_info_spinner_smoking_brand"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_6sdp"
+                        android:padding="@dimen/_3sdp"
+                        style="@style/MyEditTextstyle"
+                        android:visibility="gone"
+                        android:textColorHint="@color/white"
+                        android:layout_height="@dimen/edit_text_height" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
